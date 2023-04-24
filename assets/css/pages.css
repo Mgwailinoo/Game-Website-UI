@@ -1,0 +1,750 @@
+/* =================================== About Us Page Section ================== 
+====================================================================
+*/
+
+#about-hero-bg {
+  background: url("../img/about/about-hero.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.about-us-section {
+  background-color: #141217;
+}
+
+.about-us-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.about-us-content-box {
+  padding: 3.2rem 0;
+}
+
+.about-us-p {
+  font-size: 1.8rem;
+  letter-spacing: 0.75px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.about-us-img {
+  width: 100%;
+  height: 130%;
+  border-radius: 5px;
+  object-fit: fill;
+}
+
+.about-us-img-2 {
+  width: 95%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: fill;
+}
+
+.mb {
+  margin-top: 15rem;
+  margin-left: -5rem;
+}
+
+/* =================================== Shop Page Section ================== 
+====================================================================
+*/
+#shop-bg {
+  background: url(../img/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+/* =================================== Blog Page Section ================== 
+====================================================================
+*/
+
+#blog-hero-bg {
+  background: url(../img/game/game1.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.blog-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+/* =================================== Our Team Page Section ================== 
+====================================================================
+*/
+
+#ourteam-bg {
+  background: url(../img/team/team-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.our-team-grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.our-team-member-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.our-team-section {
+  background-color: #141217;
+}
+
+.team-member {
+  opacity: 0.9;
+}
+
+.our-team-members {
+  padding: 4.8rem 0;
+}
+
+.team-member-img {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+.team-member-info {
+  text-align: center;
+  position: relative;
+  margin-top: -5rem;
+}
+
+.team-member-info h3 {
+  font-size: 2.2rem;
+  color: #d2dae2;
+  font-weight: 600;
+}
+
+.team-member-info h6 {
+  font-size: 1.2rem;
+  color: rgba(243, 196, 66);
+  padding: 1rem 0;
+}
+
+/* =================================== Our Team Page Section ================== 
+====================================================================
+*/
+
+#testimonials-bg {
+  background: url(../img/testimonials/testimonials-bg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.testimonials-grid {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+/* =================================== Pricing Page Section ================== 
+====================================================================
+*/
+
+.pricing-section {
+  background-color: #141217;
+}
+
+.grid--price-cols {
+  grid-template-columns: 2fr 1.3fr;
+  align-items: center;
+}
+
+.pricing-box {
+  padding: 4.6rem 0;
+}
+
+.pricing-box-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.pricing,
+.pricing-pro {
+  width: 100%;
+  background-color: #000;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-pro {
+  background-color: #0d027c;
+}
+
+.pricing-header {
+  padding-bottom: 2rem;
+}
+
+.pricing-header .pricing-title {
+  font-size: 3rem;
+  font-size: 400;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.pricing-header .pricing-content {
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding-bottom: 2rem;
+}
+
+.price-month {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 3rem;
+}
+
+.price-month p {
+  font-size: 1.3rem;
+}
+
+.price-month .price-number {
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.pricing-btn:visited,
+.pricing-btn:link,
+.pricing-btn-pro:visited,
+.pricing-btn-pro:link {
+  width: 100%;
+  background-color: #808e9b;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  color: #000;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.pricing-btn-pro:visited,
+.pricing-btn-pro:link {
+  background-color: #fcb900;
+}
+
+.pricing-btn:hover,
+.pricing-btn:active,
+.pricing-btn-pro:hover,
+.pricing-btn-pro:active {
+  color: #000;
+  transform: translateY(-5px);
+}
+
+.pricing-plan .plan-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.pricing-plan .plan-desc {
+  font-size: 1.7rem;
+  line-height: 150%;
+  letter-spacing: 0.75px;
+  padding: 0.5rem 0;
+}
+
+.plan-desc .fa-check {
+  color: #fcb900;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-right: 0.5rem;
+}
+
+/* =================================== Pricing Accordion Section ================== 
+====================================================================
+*/
+
+.pricing-accordion-section {
+  background-color: #141217;
+  margin-top: -10rem;
+}
+
+/* ===================================  Accordion Section ================== 
+====================================================================
+*/
+
+.accordion-box {
+  padding: 4.8rem 0;
+}
+
+.accordion-box-md {
+  padding-top: 6.4rem;
+}
+
+.accordion-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.accordion-left-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: left;
+}
+
+.accordion-img-box {
+  width: 100%;
+}
+
+.accordion-img {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.accordion {
+  width: 100%;
+  background: #141217;
+  margin: 0 15px;
+  padding: 15px;
+  align-items: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.accordion .accordion-content {
+  background: #141217;
+
+  overflow: hidden;
+}
+
+.active {
+  display: block;
+}
+
+.accordion-content.open {
+  padding-bottom: 1rem;
+}
+.accordion-content header {
+  display: flex;
+
+  min-height: 50px;
+  padding: 0 15px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+.accordion-content.open header {
+  min-height: 1rem;
+}
+
+.accordion-content.open .description {
+  padding: 1rem 1.5rem;
+}
+
+.accordion-content.open header .title,
+.accordion-content.open header .fa-plus,
+.accordion-content.open header .fa-minus {
+  color: #fcb900;
+}
+
+.accordion-content header .title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  color: #fff;
+  transition: 0.5s;
+}
+.accordion-content header .fa-plus,
+.accordion-content header .fa-minus {
+  font-size: 2rem;
+  color: #777;
+  transition: 0.5s;
+}
+.accordion-content .description {
+  height: 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.75;
+  line-height: 150%;
+  color: #777;
+  font-weight: 400;
+  padding: 0 15px;
+  transition: all 0.2s linear;
+  text-align: justify;
+}
+
+/* ===================================  F & Q Section ================== 
+====================================================================
+*/
+
+#FQ-bg {
+  background: url(../img/fq/F&Q-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.fq-section {
+  background-color: #141217;
+}
+
+/* ===================================  Login Section ================== 
+====================================================================
+*/
+
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141217;
+  height: 100vh;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.logo-img-login {
+  display: block;
+  width: 13rem;
+  height: auto;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Form Login */
+
+.form {
+  padding: 2rem 8rem;
+
+  border-radius: 8px;
+  background: #141217;
+}
+
+.form .field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 6px;
+}
+.field input {
+  outline: none;
+  padding: 0 15px;
+  border: 1px solid#CACACA;
+}
+.field input:focus {
+  border-bottom-width: 2px;
+}
+
+.field button {
+  color: #fff;
+  background-color: #0171d3;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.field button:hover {
+  background-color: #016dcb;
+}
+.form-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.form-link a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+}
+.form a {
+  color: #0171d3;
+  text-decoration: none;
+}
+.form-content a:hover {
+  text-decoration: underline;
+}
+
+.check-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}
+.remember-box {
+  display: flex;
+  align-items: center;
+}
+/* ===================================  Coming Soon Section ================== 
+====================================================================
+*/
+
+#coming-soon-bg {
+  background-color: #000;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+.coming-soon-box {
+  margin-top: -10rem;
+}
+
+.coming-soon-content {
+  padding: 6.4rem 0;
+}
+
+.coming-logo {
+  width: 10rem;
+}
+
+.coming-soon-p {
+  font-size: 2rem;
+  letter-spacing: 0.75;
+}
+
+/* Timer */
+.countdown-timer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.countdown-timer-container div {
+  width: 25%;
+  text-align: center;
+  font-size: 6rem;
+  color: #fcb900;
+}
+
+.countdown-timer-container .date {
+  color: #555;
+}
+
+/* ===================================  Product Details Section ================== 
+====================================================================
+*/
+
+.product-details-section {
+  background-color: #141217;
+}
+
+/* --------------Product Detail Levt------------------ */
+
+.product-detail-img {
+  width: 100%;
+  height: 25rem;
+  padding-right: 3rem;
+  object-fit: fill;
+  margin: 2rem 0;
+  border-radius: 3px;
+}
+
+.detail-payment-title {
+  font-size: 2.5rem;
+  color: #fff;
+  padding: 2rem 0;
+  background-color: #fcb900;
+  border: none;
+  border-radius: 3px;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-detail-payment {
+  margin: 0 3rem 0 0;
+  background-color: #000;
+  padding: 2rem;
+  border-radius: 3px;
+}
+
+.payment-boxes-title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.payment-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.payment-img {
+  width: 15rem;
+  height: 5rem;
+  object-fit: fill;
+  border-radius: 3px;
+  box-shadow: 4px -4px 400px -4px rgba(219, 193, 193, 0.75);
+}
+
+/* ---------------Product Detail Right----------- */
+
+.product-detail-box {
+  padding: 6.4rem 0;
+}
+
+.product-details-p {
+  padding: 3rem 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.75;
+  line-height: 150%;
+}
+
+.product-detail-title {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  color: #fcb900;
+}
+
+.product-details-input {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.id-input {
+  padding: 1rem;
+  background-color: #fff;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  margin: 1rem 0;
+}
+.id-input::placeholder {
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.fa-circle-question {
+  font-size: 2rem;
+  color: #fcb900;
+}
+
+.detail-price-box {
+  display: flex;
+}
+
+.product-detail-price .price-title {
+  font-size: 2rem;
+  color: #d2dae2;
+  padding: 1rem 0;
+}
+
+.detail-price-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.detail-price-box {
+  border: 1px solid #0171d3;
+  padding: 1rem;
+  border-radius: 3px;
+}
+
+.detail-price {
+  padding-right: 1rem;
+}
+
+.detail-price p {
+  font-size: 1.6rem;
+  color: #fcb900;
+}
+
+.detail-price span {
+  font-size: 1.6rem;
+  color: #d2dae2;
+}
+
+.detail-gem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  font-size: 3rem;
+  color: #016dcb;
+}
+
+.detail-cash-box {
+  display: flex;
+  border: none;
+
+  border-radius: 3px;
+  width: 28rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #0171d3;
+}
+
+.fa-wallet {
+  font-size: 4rem;
+  color: #fcb900;
+}
+
+.textarea-title {
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.text-area {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.btn-buy {
+  padding: 2rem 4rem;
+  background-color: #0171d3;
+  font-size: 2rem;
+  color: #d2dae2;
+  margin: 0 auto;
+  border-radius: 3px;
+}

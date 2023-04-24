@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game UI</title>
+
+    <!-- Font awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/helper.css" />
+    <link rel="stylesheet" href="./assets/css/general.css" />
+    <link rel="stylesheet" href="./assets/css/pages.css" />
+  </head>
+  <body>
+    <main>
+      <!-- -----------Header Section----------- -->
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="grid grid--2-cols">
+              <nav class="navbar">
+                <ul class="navbar-menu">
+                  <li class="navbar-menu-item">
+                    <a href="#">Play</a>
+                  </li>
+                  <li class="navbar-menu-item">
+                    <a href="shop.html">Shop</a>
+                  </li>
+                  <li class="navbar-menu-item">
+                    <a href="#">Explore</a>
+                  </li>
+                  <li class="navbar-menu-item">
+                    <a href="#">Help</a>
+                  </li>
+                  <li class="navbar-menu-item has-submenu">
+                    <a href="#"
+                      >English<i class="fa-solid fa-angle-down arrow-down"></i
+                    ></a>
+                    <ul class="submenu">
+                      <li class="submenu-item">
+                        <a href="#">Myanmar</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="shop">
+                <p class="shop-title">Experience Off Gamers New Theme</p>
+                <div class="shop-btn">
+                  <a href="shop.html">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom" data-header>
+          <div class="container">
+            <div class="header-botton-nav grid header-botton-grid">
+              <div class="logo">
+                <h1>Game</h1>
+              </div>
+              <ul class="navbar-menu-bottom">
+                <li class="navbar-menu-item-bottom">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="navbar-menu-item-bottom">
+                  <a href="about.html">About</a>
+                </li>
+                <li class="navbar-menu-item-bottom has-submenu">
+                  <a href="shop.html"
+                    >Shop<i class="fa-solid fa-angle-down arrow-down"></i
+                  ></a>
+                  <ul class="submenu">
+                    <li class="submenu-item">
+                      <a href="product-detail.html">Product Details</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="track-order.html">Track Order</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="navbar-menu-item-bottom">
+                  <a href="blog.html">Blog</a>
+                </li>
+                <li class="navbar-menu-item-bottom has-submenu">
+                  <a href="pages.html"
+                    >Pages <i class="fa-solid fa-angle-down arrow-down"></i
+                  ></a>
+                  <ul class="submenu">
+                    <li class="submenu-item">
+                      <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="ourteam.html">Our Team</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="submenu-item"><a href="F&Q.html">F&Q</a></li>
+                    <li class="submenu-item">
+                      <a href="CommingSoon.html">Comming Soon</a>
+                    </li>
+                    <li class="submenu-item"><a href="Login.html">Login</a></li>
+                    <li class="submenu-item">
+                      <a href="PopupsBanner.html">Popups Banner</a>
+                    </li>
+                    <li class="submenu-item">
+                      <a href="404.html">404 Pages</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="header-bottom-left">
+                <button
+                  class="search-btn"
+                  aria-label="open search"
+                  data-search-toggler
+                >
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                </button>
+                <input
+                  type="text"
+                  name="text"
+                  class="search-input"
+                  placeholder="search here..."
+                />
+
+                <div class="user-sign-in">
+                  <a href="userprofile.html"
+                    ><i class="fa-solid fa-circle-user user-icon"></i
+                  ></a>
+
+                  <a href="login.html" class="sign-in">Sign In</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="overlay"></div> -->
+          </div>
+        </div>
+      </header>
+      <!-- -----------Search Box----------- -->
+
+      <!-- <div class="search-container" data-search-box>
+        <div class="search-box">
+          <div class="input-wrapper">
+            <input
+              type="search"
+              name="search"
+              aria-label="search"
+              placeholder="Search here..."
+              class="search-field"
+            />
+
+            <button
+              class="search-submit"
+              aria-label="submit search"
+              data-search-toggler
+            >
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </button>
+
+            <button
+              class="search-close"
+              aria-label="close search"
+              data-search-toggler
+            ></button>
+          </div>
+        </div>
+      </div> -->
+
+      <section class="hero-section">
+        <div class="hero-section-background">
+          <div class="container">
+            <div class="hero-title">
+              <h1 class="primary-heading">
+                FIFE 23 Release<br />
+                Date Announced!
+              </h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing egestas sit
+                posuere egestas<br />
+                quam fermentum platea morbi duisit nunc vitae fringilla
+                fermentum.
+              </p>
+            </div>
+            <div class="hero-content">
+              <div class="hero-content-box grid grid--4-cols">
+                <div class="hero-content-item">
+                  <div class="hero-content-item-box">
+                    <div class="hero-icon-box">
+                      <i
+                        class="fa-solid fa-cloud-arrow-down hero-icon-item"
+                      ></i>
+                    </div>
+
+                    <h3>Assassins Creed Mirage</h3>
+                    <p>Instant digital download</p>
+                  </div>
+                </div>
+                <div class="hero-content-item">
+                  <div class="hero-content-item-box">
+                    <div class="hero-icon-box">
+                      <i class="fa-solid fa-shield hero-icon-item"></i>
+                    </div>
+                    <h3>Reiable & Safe</h3>
+                    <p>Instant digital download</p>
+                  </div>
+                </div>
+                <div class="hero-content-item">
+                  <div class="hero-content-item-box">
+                    <div class="hero-icon-box">
+                      <i
+                        class="fa-regular fa-circle-question hero-icon-item"
+                      ></i>
+                    </div>
+                    <h3>Customer Support</h3>
+                    <p>Instant digital download</p>
+                  </div>
+                </div>
+                <div class="hero-content-item">
+                  <div class="container">
+                    <div class="hero-content-item-box">
+                      <div class="hero-icon-box">
+                        <i class="fa-solid fa-user-check hero-icon-item"></i>
+                      </div>
+                      <h3>Trusted Reviews</h3>
+                      <p>Instant digital download</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------Trend Section----------- -->
+      <section class="trend-section">
+        <div class="container">
+          <div class="helper-content">
+            <div class="helper-content-box grid grid--helper-cols">
+              <div class="helper-content-header">
+                <p class="helper-heading">TRENDING</p>
+                <div class="secondary-heading">Trending Now</div>
+              </div>
+              <p class="helper-p">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              </p>
+              <div class="helper-btn-box">
+                <a href="#" class="btn">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="trend-box grid grid--4-cols">
+            <div class="trend-img-box">
+              <img
+                src="./assets/img/game/game4.webp"
+                alt=""
+                class="trend-img"
+              />
+              <div class="trend-box-content">
+                <div class="helper-heading-md trend-heading">Warrior Queen</div>
+                <div class="price-box">
+                  <span class="price-break">$24.99</span>
+                  <p class="price ml-1">$24.99</p>
+                </div>
+                <div class="trend-btn">
+                  <a href="#" class="helper-btn">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="trend-img-box">
+              <img
+                src="./assets/img/game/game3.webp"
+                alt=""
+                class="trend-img"
+              />
+              <div class="trend-box-content">
+                <div class="helper-heading-md trend-heading">Warrior Queen</div>
+                <div class="price-box">
+                  <span class="price-break">$24.99</span>
+                  <p class="price ml-1">$24.99</p>
+                </div>
+                <div class="trend-btn">
+                  <a href="#" class="helper-btn">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="trend-img-box">
+              <img
+                src="./assets/img/game/game2.webp"
+                alt=""
+                class="trend-img"
+              />
+              <div class="trend-box-content">
+                <div class="helper-heading-md trend-heading">Warrior Queen</div>
+                <div class="price-box">
+                  <span class="price-break">$24.99</span>
+                  <p class="price ml-1">$24.99</p>
+                </div>
+                <div class="trend-btn">
+                  <a href="#" class="helper-btn">Shop Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="trend-img-box">
+              <img
+                src="./assets/img/game/game1.webp"
+                alt=""
+                class="trend-img"
+              />
+              <div class="trend-box-content">
+                <div class="helper-heading-md trend-heading">Warrior Queen</div>
+                <div class="price-box">
+                  <span class="price-break">$24.99</span>
+                  <p class="price ml-1">$24.99</p>
+                </div>
+                <div class="trend-btn">
+                  <a href="#" class="helper-btn">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------Popular Section-------------------------------- -->
+      <section class="popular-section">
+        <div class="container">
+          <div class="helper-content">
+            <div class="helper-content-box grid grid--helper-cols">
+              <div class="helper-content-header">
+                <p class="helper-heading">TOP GAMES</p>
+                <div class="secondary-heading">Most Popular</div>
+              </div>
+              <p class="helper-p">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              </p>
+              <div class="helper-btn-box">
+                <a href="#" class="btn">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="game-box">
+            <div class="game-box-content grid grid--6-cols">
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game1.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game2.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game3.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/action.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/adventure.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/Fighting.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog">
+            <div class="catalog-box">
+              <div class="catalog-img">
+                <img
+                  src="./assets/img/game/game4.webp"
+                  alt="catalog-img"
+                  class="catalog-img"
+                />
+              </div>
+              <div class="catalog-content">
+                <div class="helper-heading">CATALOG</div>
+                <div class="secondary-heading">Explore More Our Catalog</div>
+                <p class="catalog-p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Faucibus leo porta nunc, velit. Dui justo, non platea viverra
+                  aliquam convallis arcu molestie egestas. Volutpat integer
+                  tristique ac nam integer. Hac ut nisi, ut amet donec porta.
+                </p>
+                <div class="catalog-btn">
+                  <a href="#" class="btn">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="categories">
+            <div class="container">
+              <h3 class="teritary-heading grid--center-h">Categories</h3>
+              <div class="categories-img-content">
+                <div class="categories-grid">
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/action.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Action</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/adventure.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Adventure</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/arcade.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Arcade</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/Fighting.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Fighting</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/FPS.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">FPS</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/kids.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Kids</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/racing.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Racing</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/simulation.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Simulation</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/sport.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Sport</h4>
+                    </div>
+                  </div>
+                  <div class="category-img-box">
+                    <div class="category-img-filter">
+                      <img
+                        src="./assets/img/game/Strategy.jpg"
+                        alt="category-img"
+                        class="category-img"
+                      />
+                    </div>
+                    <div class="category-header-box">
+                      <h4 class="category-header">Strategy</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="category-btn-box">
+                <a href="" class="category-btn">View All</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------Weekly Section -------------------------------- -->
+      <section class="weekly-section">
+        <div class="container">
+          <div class="helper-content">
+            <div class="helper-content-box grid grid--helper-cols">
+              <div class="helper-content-header">
+                <p class="helper-heading">DEALS</p>
+                <div class="secondary-heading">Weekly Deals</div>
+              </div>
+              <p class="helper-p">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              </p>
+              <div class="helper-btn-box">
+                <a href="#" class="btn">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="game-box">
+            <div class="game-box-content grid grid--6-cols">
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game1.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game2.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game3.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/action.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/adventure.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/Fighting.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------Release Section -------------------------------- -->
+      <section class="release-section">
+        <div class="container">
+          <div class="helper-content">
+            <div class="helper-content-box grid grid--helper-cols">
+              <div class="helper-content-header">
+                <p class="helper-heading">New Game</p>
+                <div class="secondary-heading">New Releases</div>
+              </div>
+              <p class="helper-p">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              </p>
+              <div class="helper-btn-box">
+                <a href="#" class="btn">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="game-box">
+            <div class="game-box-content grid grid--10-cols">
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game1.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game2.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game3.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/action.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/adventure.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/Fighting.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game1.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game2.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game3.webp"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/action.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/adventure.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/Fighting.jpg"
+                  alt=""
+                  class="game-img"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="release-content-box">
+            <div class="content content-grid">
+              <div class="content-img-left">
+                <div class="content-release">
+                  <div class="helper-heading">CATALOG</div>
+                  <div class="secondary-heading">
+                    Display Our Prices On Your Favorite Websites!
+                  </div>
+                  <p class="catalog-p">
+                    Works on Steam, Twitch, Amazon, YouTube and more!
+                  </p>
+                  <div class="catalog-btn">
+                    <a href="#" class="btn">Get The Game Now</a>
+                  </div>
+                </div>
+                <div class="var-img">
+                  <img
+                    src="./assets/img/game/game4.webp"
+                    alt=""
+                    class="vr-img-1"
+                  />
+                </div>
+              </div>
+
+              <div class="content-img-right">
+                <img
+                  src="./assets/img/game/game1.webp"
+                  alt=""
+                  class="vr-img-2"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="release-game-content">
+            <div class="release-games release-games-grid">
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game1.webp"
+                  alt=""
+                  class="game-img-md"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game2.webp"
+                  alt=""
+                  class="game-img-md"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content">
+                <img
+                  src="./assets/img/game/game3.webp"
+                  alt=""
+                  class="game-img-md"
+                />
+                <div class="game-box-item">
+                  <p class="game-title">KhuFu Panda</p>
+                  <div class="price-box">
+                    <span class="price-break">$24.99</span>
+                    <p class="price ml-1 underline">$24.99</p>
+                  </div>
+                  <div class="popular-btn">
+                    <a href="#" class="helper-btn">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="game-content-preorder">
+                <div class="helper-heading">PRE-ORDER</div>
+                <div class="secondary-heading">Pre-Order Games</div>
+                <p class="catalog-p">
+                  Non platea viverra aliquam convallis molestie egestas integer
+                  tristique nam integer. Hac ut nisi, ut amet donec
+                </p>
+                <div class="preorder-btn">
+                  <a href="#" class="btn-black">View All</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------Testimonial Section-------------------------------- -->
+      <section class="testimonial-section">
+        <div class="container">
+          <div class="helper-content">
+            <div class="helper-content-box grid grid--helper-cols">
+              <div class="helper-content-header">
+                <p class="helper-heading">Testimonials</p>
+                <div class="secondary-heading">Testimonials</div>
+              </div>
+              <p class="helper-p">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              </p>
+              <div class="helper-btn-box">
+                <a href="#" class="btn">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-box grid grid--3-cols">
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="testimonial-icon-box">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="teritary-heading-sm">Had the Best Experience!</div>
+                <div class="catalog-p">
+                  Lorem ipsum dolor sit amet, consecte adip assa iaculis porta
+                  ultricies semper massa amet pretium dia nibh cursus.
+                </div>
+              </div>
+
+              <div class="testimonial-user-info">
+                <div class="testimonial-user">
+                  <img
+                    src="./assets/img/customer/customer-2.jpg"
+                    alt="customer-1"
+                    class="customer-img"
+                  />
+                  <div class="testimonial-user-name">
+                    <h5>John Williams</h5>
+                    <p>Gamers</p>
+                  </div>
+                </div>
+                <div class="testimonial-quote">
+                  <i class="fa-solid fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="testimonial-icon-box">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="teritary-heading-sm">
+                  I highly recommend GamePlay!
+                </div>
+                <div class="catalog-p">
+                  Lorem ipsum dolor sit amet, consecte adip assa iaculis porta
+                  ultricies semper massa amet pretium dia nibh cursus.
+                </div>
+              </div>
+
+              <div class="testimonial-user-info">
+                <div class="testimonial-user">
+                  <img
+                    src="./assets/img/customer/customer-1.jpg"
+                    alt="customer-1"
+                    class="customer-img"
+                  />
+                  <div class="testimonial-user-name">
+                    <h5>Melissa Harvey</h5>
+                    <p>Gamers</p>
+                  </div>
+                </div>
+                <div class="testimonial-quote">
+                  <i class="fa-solid fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial">
+              <div class="testimonial-content">
+                <div class="testimonial-icon-box">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="teritary-heading-sm">Had the Best Experience!</div>
+                <div class="catalog-p">
+                  Lorem ipsum dolor sit amet, consecte adip assa iaculis porta
+                  ultricies semper massa amet pretium dia nibh cursus.
+                </div>
+              </div>
+
+              <div class="testimonial-user-info">
+                <div class="testimonial-user">
+                  <img
+                    src="./assets/img/customer/customer-3.jpg"
+                    alt="customer-1"
+                    class="customer-img"
+                  />
+                  <div class="testimonial-user-name">
+                    <h5>Harry Anderson</h5>
+                    <p>Gamers</p>
+                  </div>
+                </div>
+                <div class="testimonial-quote">
+                  <i class="fa-solid fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --------------------Latest New Section-------------------------------- -->
+      <section class="latest-news-section">
+        <div class="container">
+          <div class="helper-content">
+            <div class="helper-content-box grid grid--helper-cols">
+              <div class="helper-content-header">
+                <p class="helper-heading">NEWS</p>
+
+                <div class="secondary-heading">Latest News</div>
+              </div>
+              <p class="helper-p">
+                Lorem ipsum dolor sit amet consectetur adipiscing elit
+              </p>
+              <div class="helper-btn-box">
+                <a href="#" class="btn">View All</a>
+              </div>
+            </div>
+          </div>
+          <div class="latest-news-box grid grid--3-cols">
+            <div class="latest-news-content">
+              <img
+                src="./assets/img/game/vr-play-1.jpg"
+                alt="latest-news-img"
+                class="latest-news-img"
+              />
+              <p class="latest-news-p">
+                Velit dapibus sollicitudin sit iaculis
+              </p>
+              <h6 class="latest-news-time">October 16, 2022 No Comments</h6>
+            </div>
+            <div class="latest-news-content">
+              <img
+                src="./assets/img/game/vr-play-1.jpg"
+                alt="latest-news-img"
+                class="latest-news-img"
+              />
+              <p class="latest-news-p">
+                Velit dapibus sollicitudin sit iaculis
+              </p>
+              <h6 class="latest-news-time">October 16, 2022 No Comments</h6>
+            </div>
+            <div class="latest-news-content">
+              <img
+                src="./assets/img/hero/home.jpg"
+                alt="latest-news-img"
+                class="latest-news-img"
+              />
+              <p class="latest-news-p">
+                Velit dapibus sollicitudin sit iaculis
+              </p>
+              <h6 class="latest-news-time">October 16, 2022 No Comments</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="footer-section">
+      <div class="container">
+        <div class="footer-box grid grid--2-cols">
+          <div class="footer-left-box">
+            <div class="footer-first-row">
+              <div class="footer-item">
+                <p>About Gameplay</p>
+                <ul>
+                  <li class="footer-item-link"><a href="#"> About us</a></li>
+                  <li class="footer-item-link"><a href="#"> Contact us</a></li>
+                  <li class="footer-item-link"><a href="#"> Careers us</a></li>
+                </ul>
+              </div>
+              <div class="footer-item">
+                <p>Buy</p>
+                <ul>
+                  <li class="footer-item-link"><a href="#"> How to buy</a></li>
+                  <li class="footer-item-link"><a href="#"> Game Lists</a></li>
+                  <li class="footer-item-link"><a href="#"> Collections</a></li>
+                </ul>
+              </div>
+              <div class="footer-item">
+                <p>Help</p>
+                <ul>
+                  <li class="footer-item-link"><a href="#"> F&Q</a></li>
+                  <li class="footer-item-link">
+                    <a href="#"> How to active game</a>
+                  </li>
+                  <li class="footer-item-link">
+                    <a href="#"> Create a ticket</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer-item">
+                <p>Community</p>
+                <ul>
+                  <li class="footer-item-link"><a href="#"> Blog</a></li>
+                  <li class="footer-item-link"><a href="#"> Giveaway</a></li>
+                  <li class="footer-item-link">
+                    <a href="#"> Become affilate</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-second-row">
+              <ul class="footer-second-item">
+                <li class="footer-item-link"><a href="#"> Legal</a></li>
+                <li class="footer-item-link">
+                  <a href="#"> Privacy-Policy</a>
+                </li>
+                <li class="footer-item-link">
+                  <a href="#"> Our thanks</a>
+                </li>
+                <li class="footer-item-link">
+                  <a href="#">Cookie declaration</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-third-row">
+              <div class="footer-icon-box">
+                <i class="fa-brands fa-facebook-f footer-icon"></i>
+                <i class="fa-brands fa-twitter footer-icon"></i>
+                <i class="fa-brands fa-instagram footer-icon"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer-right-box">
+            <div class="footer-content-box">
+              <div class="helper-heading">NEWSLETTER</div>
+              <div class="secondary-heading">Get up to $100 off*</div>
+              <p class="footer-p">
+                Your first order when you sign up for emails
+              </p>
+              <h6 class="footer-sign-up">Sign Up Now!</h6>
+              <div class="footer-emial-box">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  name="email"
+                  class="footer-email"
+                />
+                <a href="#" class="btn-subscribe">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom js -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- Fontawesome JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"
+      integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="./assets/css/userprofile.css" />
+
+    <!----===== Iconscout CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--<title>Admin Dashboard Panel</title>-->
+  </head>
+  <body>
+    <nav>
+      <div class="user-info">
+        <div class="user-image">
+          <img src="./assets/img/team/member1.webp" alt="" class="user-img" />
+        </div>
+
+        <div class="user-info-content">
+          <h5 class="user-name">Ma Ma</h5>
+          <p class="user-phone">0978347834</p>
+        </div>
+      </div>
+      <div class="user-amount">
+        <div class="user-current-amount">
+          <h5 class="current-amount">Current Amount (kyats)</h5>
+          <p class="current-amount-price">0 Ks</p>
+        </div>
+        <div class="user-current-amount">
+          <h5 class="current-amount">Current Amount (bahts)</h5>
+          <p class="current-amount-price">0 Bahts</p>
+        </div>
+      </div>
+
+      <div class="menu-items">
+        <ul class="nav-links">
+          <li>
+            <p>သင့်အချက်အလက်</p>
+            <a href="#">
+              <i class="uil uil-user"></i>
+              <span class="link-name">User ID-AKH288022</span>
+            </a>
+          </li>
+          <li>
+            <p>စာရင်းမှတ်တမ်းများ</p>
+            <a href="#">
+              <i class="uil uil-file-info-alt"></i>
+              <span class="link-name tab-links active-links" onclick="opentab('topup-money')">ငွေဖြည့်စာရင်း</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="tab-links" >
+              <i class="uil uil-file-info-alt"></i>
+              <span class="link-name tab-links" onclick="opentab('transfer-money')">ငွေလွှဲစာရင်း</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="uil uil-file-info-alt"></i>
+              <span class="link-name">order မှတ်တမ်း</span>
+            </a>
+          </li>
+          <li>
+            <p>Settings</p>
+            <a href="#">
+              <i class="uil uil-key-skeleton"></i>
+              <span class="link-name tab-links" onclick="opentab('password')">စကားဝှက်ပြောင်းမည်</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="uil uil-share"></i>
+              <span class="link-name">အကောင့်မှ ထွက်မည်</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="tab-contents" id="topup-money">
+      <div class="top">
+        <i class="uil uil-bars"></i>
+
+        <a href="index.html"><i class="uil uil-home"></i></a>
+
+        
+      </div>
+
+     
+
+        <div class="activity">
+          <div class="title">
+            <i class="uil uil-money-withdraw"></i>
+            <span class="text">ငွေဖြည့်စာရင်း</span>
+          </div>
+
+          <div class="activity-data">
+            <div class="data amount">
+              <span class="data-title">Amount</span>
+              <span class="data-list">1000ks</span>
+              <span class="data-list">2000ks</span>
+              <span class="data-list">3000ks</span>
+              <span class="data-list">5000ks</span>
+              <span class="data-list">4000ks</span>
+              <span class="data-list">10000ks</span>
+              <span class="data-list">12000ks</span>
+            </div>
+            <div class="data paymentsystem">
+              <span class="data-title">Payment System</span>
+              <span class="data-list">wavepay</span>
+              <span class="data-list">kpay</span>
+              <span class="data-list">wavepay</span>
+              <span class="data-list">kpay</span>
+              <span class="data-list">wavepay</span>
+              <span class="data-list">kpay</span>
+              <span class="data-list">kpay</span>
+            </div>
+            <div class="data date">
+              <span class="data-title">Date & Time</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2022-02-12(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+            </div>
+            <div class="data status">
+              <span class="data-title">Status</span>
+              <span class="data-list">Reject</span>
+              <span class="data-list">Complete</span>
+              <span class="data-list">Reject</span>
+              <span class="data-list">Reject</span>
+              <span class="data-list">Complete</span>
+              <span class="data-list">Reject</span>
+              <span class="data-list">Complete</span>
+            </div>
+           
+          </div>
+          
+        
+          
+          
+        </div>
+      </div>
+    </section>
+    <section class="tab-contents active-tabs" id="transfer-money">
+      <div class="top">
+        <i class="uil uil-bars"></i>
+
+        <a href="index.html"><i class="uil uil-home"></i></a>
+
+        
+      </div>
+
+     
+
+        <div class="activity">
+          <div class="title">
+            <i class="uil uil-money-withdraw"></i>
+            <span class="text">ငွေလွှဲစာရင်း</span>
+          </div>
+          
+          <div class="tab-titles-box">
+            <p class="tab-links  box" onclick="opentab('receive')">
+              <i class="uil uil-money-withdraw"></i>
+              ငွေလက်ခံစာရင်း
+            </p>
+            
+            <p class="tab-links  box-1" onclick="opentab('transfer')">
+              <i class="uil uil-money-insert"></i>
+              ငွေလွှဲစာရင်း</p>
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+    <section class="tab-contents" id="receive">
+      <div class="top">
+        <i class="uil uil-bars"></i>
+
+        <a href="index.html"><i class="uil uil-home"></i></a>
+
+        
+      </div>
+      <div class="tab-titles">
+        <p class="tab-links box-md" onclick="opentab('receive')">
+          ငွေလက်ခံစာရင်း
+        </p>
+       
+        <p class="tab-links box-md-1" onclick="opentab('transfer')">ငွေလွှဲစာရင်း</p>
+      </div>
+
+     
+
+        <div class="activity">
+          <div class="title">
+            <i class="uil uil-money-withdraw"></i>
+            <span class="text"> ငွေလက်ခံစာရင်း</span>
+          </div>
+          <div class="activity-data">
+            <div class="data amount">
+              <span class="data-title">Amount</span>
+              <span class="data-list">1000ks</span>
+              <span class="data-list">2000ks</span>
+              <span class="data-list">3000ks</span>
+              <span class="data-list">5000ks</span>
+              <span class="data-list">4000ks</span>
+              <span class="data-list">10000ks</span>
+              <span class="data-list">12000ks</span>
+            </div>
+            <div class="data form">
+              <span class="data-title">From</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+            </div>
+            <div class="data to">
+              <span class="data-title">To</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+            </div>
+            <div class="data date">
+              <span class="data-title">Date & Time</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2022-02-12(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+            </div>
+           
+          </div>
+          
+
+          
+        </div>
+      </div>
+    </section>
+    <section class="tab-contents" id="transfer">
+      <div class="top">
+        <i class="uil uil-bars"></i>
+
+        <a href="index.html"><i class="uil uil-home"></i></a>
+
+        
+      </div>
+      <div class="tab-titles">
+        <p class="tab-links box-md" onclick="opentab('receive')">
+          ငွေလက်ခံစာရင်း
+        </p>
+       
+        <p class="tab-links box-md-1" onclick="opentab('transfer')">ငွေလွှဲစာရင်း</p>
+      </div>
+
+     
+
+        <div class="activity">
+          <div class="title">
+            <i class="uil uil-money-insert"></i>
+            <span class="text">ငွေလွှဲစာရင်း</span>
+          </div>
+          <div class="activity-data">
+            <div class="data amount">
+              <span class="data-title">Amount</span>
+              <span class="data-list">1000ks</span>
+              <span class="data-list">2000ks</span>
+              <span class="data-list">3000ks</span>
+              <span class="data-list">5000ks</span>
+              <span class="data-list">4000ks</span>
+              <span class="data-list">10000ks</span>
+              <span class="data-list">12000ks</span>
+            </div>
+            <div class="data from">
+              <span class="data-title">From</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+              <span class="data-list">AKH(AKH111333)</span>
+            </div>
+            <div class="data to">
+              <span class="data-title">To</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+              <span class="data-list">AKH(AKH111222)</span>
+            </div>
+            
+            <div class="data date">
+              <span class="data-title">Date & Time</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2022-02-12(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+              <span class="data-list">2023-01-11(10:00 AM)</span>
+            </div>
+           
+          </div>
+          
+
+          
+        </div>
+      </div>
+    </section>
+    <section class="tab-contents" id="password">
+      <div class="top">
+        <i class="uil uil-bars"></i>
+
+        <a href="index.html"><i class="uil uil-home"></i></a>
+
+        
+      </div>
+      <div class="password-container">
+        <div class="password-box">
+          <header>
+            <h4>Enter Old Password</h4>
+          </header>
+         
+          <form action="#">
+            <div class="input-field">
+              <input type="number" />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+            </div>
+            <button>Comfirm Password</button>
+          </form>
+        </div>
+        <div class="password-box">
+          <header>
+            <h4>Enter New Password</h4>
+          </header>
+         
+          <form action="#">
+            <div class="input-field">
+              <input type="number" />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+              <input type="number" disabled />
+            </div>
+            <button>Change Password</button>
+          </form>
+        </div>
+      </div>
+     
+      </div>
+    </section>
+
+
+
+    <script src="assets/js/userprofile.js"></script>
+  </body>
+</html>

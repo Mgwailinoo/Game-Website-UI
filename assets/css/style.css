@@ -1,0 +1,767 @@
+/* =================================== First Nav================== 
+====================================================================
+*/
+
+.header-top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top {
+  background-color: #2c3e50;
+  color: #fff;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.navbar-menu,
+.navbar-menu-bottom {
+  display: grid;
+  grid-template-columns: repeat(5, 0.5fr);
+  justify-content: right;
+  gap: 0.1rem;
+  padding: 1rem 0;
+  width: 60%;
+}
+
+.navbar-menu-bottom {
+  width: 100%;
+}
+
+.navbar-menu-item,
+.navbar-menu-item-bottom {
+  display: flex;
+  position: relative;
+}
+
+.navbar-menu-item a,
+.navbar-menu-item-bottom a {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.navbar-menu-item-bottom a {
+  font-size: 1.5rem;
+}
+
+.navbar-menu-item .submenu,
+.navbar-menu-item-bottom .submenu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  display: none;
+
+  background-color: #333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-menu-item:hover .submenu,
+.navbar-menu-item-bottom:hover .submenu {
+  display: block;
+}
+
+.submenu-item a {
+  display: block;
+  width: 15rem;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.submenu-item a:hover {
+  background-color: #fcb900;
+  color: #000;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5rem;
+  align-items: center;
+  justify-content: end;
+  margin-left: 20rem;
+  width: 80%;
+}
+
+.shop-btn a:link,
+.shop-btn a:visited {
+  display: inline-block;
+
+  border: none;
+  padding: 1rem 2rem;
+  color: #000;
+  font-weight: 700;
+  background-color: #fcb900;
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+.shop-btn a:hover,
+.shop-btn a:active {
+  transform: translateY(-5px);
+}
+
+/* =================================== Second Nav================== 
+====================================================================
+*/
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  display: block;
+  width: 5rem;
+
+  object-fit: cover;
+}
+
+.header-botton-grid {
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  justify-content: left;
+  gap: 0.3rem;
+}
+
+.header-botton-nav {
+  padding: 1rem 0;
+}
+
+.sign-in-nav {
+  display: flex;
+
+  align-items: center;
+}
+
+.header-bottom {
+  position: absolute;
+  width: 100%;
+  /* height: 110vh; */
+
+  color: #fff;
+  font-size: 1.6rem;
+  z-index: 5;
+}
+
+/* Header Bottom Left */
+.header-bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.search-btn {
+  color: #fff;
+  font-size: 20px;
+}
+
+.search-input {
+  width: 12rem;
+  background-color: aliceblue;
+  padding: 0.5rem;
+  border-radius: 3px;
+  margin-left: -1rem;
+}
+
+.user-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.search-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.user-sign-in {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-down {
+  margin-left: 5px;
+}
+
+/* =================================== Hero Section ================== 
+====================================================================
+*/
+
+.hero-section {
+  background: url("../img/hero/home7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  height: 120vh;
+}
+
+.hero-title {
+  padding-top: 5rem;
+}
+
+.hero-title p {
+  padding: 3.2rem 0;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #555;
+}
+
+.hero-content {
+  padding: 10rem 0;
+}
+
+.hero-content-item {
+  background-color: #363439;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%23423f46' fill-opacity='0.38' fill-rule='evenodd'/%3E%3C/svg%3E");
+  width: 24rem;
+  padding: 2rem 0;
+  border-radius: 5px;
+}
+
+.hero-content-item-box {
+  text-align: center;
+}
+
+.hero-content-item-box h3 {
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.hero-content-item-box p {
+  font-size: 1.3rem;
+  color: #fff;
+  padding-bottom: 1rem 0;
+}
+
+/* .hero-icon-box {
+  align-items: center;
+} */
+
+.hero-icon-item {
+  display: inline-block;
+  width: 4rem;
+  height: auto;
+  color: #fcb900;
+  padding-top: 1rem;
+}
+
+/* =================================== Trend Section================== 
+====================================================================
+*/
+
+.space {
+  padding: 35rem 0;
+  background-color: #000;
+}
+
+.trend-section {
+  padding: 9.6rem 0;
+  background-color: #000;
+  z-index: 50;
+}
+
+.trend-box {
+  padding: 4rem 0 20rem 0;
+}
+
+.trend-img-box {
+  position: relative;
+  backdrop-filter: opacity(1px);
+  background-color: rgba(0, 0, 0, 0.187);
+}
+
+.trend-img {
+  background-repeat: no-repeat;
+  background-size: fill;
+  opacity: 0.5;
+  width: 25rem;
+  height: 25rem;
+
+  position: absolute;
+  border-radius: 3px;
+}
+
+.trend-box-content {
+  display: grid;
+  row-gap: 1rem;
+  padding: 10rem 2rem;
+  position: absolute;
+}
+
+.trend-heading {
+  margin-top: 3rem;
+}
+
+/* =================================== Popular Section================== 
+====================================================================
+*/
+
+.popular-section {
+  background: linear-gradient(
+    135deg,
+    rgba(44, 44, 84, 0.805) 0%,
+    rgb(0, 0, 0) 100%,
+    rgba(44, 44, 84, 0.805) 50%
+  );
+
+  padding: 9.6rem 0 3.2rem 0;
+}
+
+/* =================================== Catalog Section================== 
+====================================================================
+*/
+
+.catalog {
+  padding-top: 9.6rem;
+}
+
+.catalog-box {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  column-gap: 0.1rem;
+}
+
+.catalog-content {
+  border-radius: 5px;
+  padding: 6.4rem;
+  background-color: #141217;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%231c1922' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.catalog-p {
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  padding-top: 2rem;
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.catalog-btn {
+  padding: 2rem 0;
+}
+
+.catalog-img {
+  width: 100%;
+  height: 45rem;
+  object-fit: cover;
+}
+
+/* =================================== Categories Section================== 
+====================================================================
+*/
+
+.categories {
+  padding: 9.6rem 3.2rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-img-content {
+  padding: 4.6rem 0 3.2rem 0;
+}
+
+.category-img-box {
+  text-align: center;
+}
+
+.category-img-filter {
+  opacity: 0.5;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.category-img {
+  width: 20rem;
+  height: 13rem;
+  object-fit: fill;
+  border-radius: 3px;
+
+  transition: all 0.5s;
+}
+
+.category-img:hover {
+  transform: scale(1.1);
+}
+
+.category-header-box {
+  text-align: center;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.category-header {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+  margin-top: -8rem;
+}
+
+.category-btn-box {
+  text-align: center;
+}
+
+.category-btn:link,
+.category-btn:visited {
+  display: inline-block;
+  border: none;
+  padding: 1.5rem 3rem;
+  background-color: #000;
+  color: #777;
+  font-weight: 400;
+  font-size: 2rem;
+  border-radius: 3px;
+}
+
+.category-btn:hover,
+.category-btn:active {
+  transform: translateY(-5px);
+}
+
+/* =================================== Weekly Section================== 
+====================================================================
+*/
+
+.weekly-section {
+  background-color: #0d027c;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%23170c84' fill-opacity='0.24' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* ===================================Release Section================== 
+====================================================================
+*/
+
+.release-section {
+  background-color: #141217;
+}
+
+.release-content-box {
+  padding: 9.6rem 0 12rem 0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.content-img-left {
+  position: relative;
+  margin-top: -15rem;
+}
+
+.content-release {
+  width: 50rem;
+  padding: 5rem;
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+}
+
+.var-img {
+  width: 50rem;
+  height: 60rem;
+  position: absolute;
+  top: -10rem;
+  left: 25rem;
+}
+
+.vr-img-1 {
+  width: 50rem;
+  height: 50rem;
+  object-fit: cover;
+}
+
+.vr-img-2 {
+  width: 38rem;
+  height: 60rem;
+}
+
+.content-img-right {
+  width: 45rem;
+  height: 60rem;
+  margin-right: -10rem;
+  margin-bottom: -25rem;
+}
+
+.catalog-release-p {
+  font-size: 2.2rem;
+  color: #777;
+}
+
+.content {
+  padding-bottom: 12.8rem;
+}
+
+.release-game-content {
+  padding: 12.8rem 0 0 0;
+}
+
+.release-games-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr;
+  gap: 2rem;
+}
+
+.game-content-preorder {
+  padding: 3rem;
+  background-color: #fcb900;
+  border-radius: 3px;
+}
+
+.game-content-preorder .secondary-heading {
+  color: #000;
+}
+
+/* ===================================Testimonial Section================== 
+====================================================================
+*/
+.testimonial-section {
+  background-color: #141217;
+  padding: 4.6rem 0 9.6rem 0;
+}
+
+.testimonial-box {
+  padding: 6.8rem 0 0 0;
+}
+
+.testimonial {
+  border-radius: 5%;
+}
+
+.testimonial-content {
+  background-color: #000;
+  padding: 3rem;
+  width: 100%;
+}
+
+.testimonial-icon-box .fa-star {
+  font-size: 2rem;
+  color: #fcb900;
+  padding-bottom: 2rem;
+}
+
+.testimonial-user-info {
+  background-color: #0d027c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.customer-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  object-fit: fill;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-user-name {
+  padding: 0 1.5rem;
+}
+
+.testimonial-user-name h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.testimonial-user-name p {
+  font-size: 1.5rem;
+  color: #fcb900;
+}
+
+.testimonial-quote .fa-quote-right {
+  font-size: 5rem;
+  color: #fcb900;
+}
+
+/* ===================================Latest News Section================== 
+====================================================================
+*/
+
+.latest-news-section {
+  padding: 6.4rem;
+  background: linear-gradient(
+    135deg,
+    rgba(44, 44, 84, 0.805) 0%,
+    rgb(0, 0, 0) 100%,
+    rgba(44, 44, 84, 0.805) 50%
+  );
+}
+
+.latest-news-box {
+  padding: 4.8rem 0 0 0;
+}
+
+.latest-news-img {
+  border-radius: 3px;
+  width: 100%;
+}
+
+.latest-news-p {
+  padding: 1.5rem 0 1rem 0;
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.75;
+}
+
+.latest-news-time {
+  font-size: 1.5rem;
+  letter-spacing: 0.75;
+  color: #777;
+}
+
+/* ===================================Footer Section================== 
+====================================================================
+*/
+
+.footer-section {
+  background-image: url("../img/game/game4.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 80vh;
+  opacity: 0.9;
+}
+
+.footer-first-row {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  flex-basis: auto;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #141217;
+}
+
+.footer-second-row {
+  border-bottom: 1px solid #141217;
+}
+
+.footer-second-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.footer-item {
+  padding-bottom: 2rem;
+}
+
+.footer-item p {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer-item-link a:link,
+.footer-item-link a:visited {
+  font-size: 1.6rem;
+  color: #555;
+  padding: 1rem 0;
+  transition: 0.5s;
+}
+
+.footer-item-link a:hover,
+.footer-item-link a:active {
+  color: #fcb900;
+}
+
+.footer-icon {
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background-color: #0d027c;
+  border-radius: 4px;
+}
+
+.footer-icon-box {
+  padding: 3rem 0;
+  width: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ------------------------------Footer Left---------------- */
+.footer-right-box {
+  padding-left: 1.5rem;
+}
+
+.footer-content-box {
+  border-radius: 5px;
+  padding: 3.2rem;
+  background-color: #141217;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%231c1922' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.footer-p {
+  font-size: 2.2rem;
+  padding: 2rem 0;
+}
+
+.footer-sign-up {
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  color: #fff;
+  padding: 2rem 0;
+}
+.footer-emial-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-email {
+  padding: 1.3rem;
+  background-color: #fff;
+  font-size: 1.6rem;
+  width: 35rem;
+  border-radius: 5px;
+}
+
+.btn-subscribe:link,
+.btn-subscribe:visited {
+  display: inline-block;
+  border: none;
+  padding: 1.5rem;
+  background-color: #fcb900;
+  color: #000;
+  font-weight: 400;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:active {
+  transform: translateY(-5px);
+}
